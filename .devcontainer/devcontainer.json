@@ -1,0 +1,26 @@
+{
+  "name": "Ubuntu 26.04 Development Environment",
+  "image": "ubuntu:resolute", 
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "installOhMyZsh": true,
+      "upgradePackages": true
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.remote-explorer"
+      ]
+    }
+  },
+  "forwardPorts": [],
+  "postCreateCommand": "echo 'Welcome To Ubuntu 26.04' && uname -a",
+  "remoteUser": "mysticgiggle"
+}
