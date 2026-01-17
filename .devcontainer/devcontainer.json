@@ -22,6 +22,6 @@
     }
   },
   "forwardPorts": [],
-  "postCreateCommand": "echo 'Welcome To Ubuntu 26.04' && uname -a",
+  "postCreateCommand": "echo 'Welcome To Ubuntu 26.04' && uname -a && curl -fsSL https://code-server.dev/install.sh | sh && code-server --bind-addr 0.0.0.0:8080",
   "remoteUser": "mysticgiggle"
 }
