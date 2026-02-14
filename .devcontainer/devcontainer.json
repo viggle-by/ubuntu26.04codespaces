@@ -1,6 +1,6 @@
 {
   "name": "Ubuntu 26.04 Development Environment",
-  "image": "ubuntu:resolute", 
+  "image": "ghcr.io/viggle-by/ggtuff:main", 
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "installZsh": true,
@@ -8,7 +8,6 @@
       "upgradePackages": true
     },
     "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "customizations": {
     "vscode": {
@@ -22,6 +21,6 @@
     }
   },
   "forwardPorts": [],
-  "postCreateCommand": "echo 'Welcome To Ubuntu 26.04' && uname -a && curl -fsSL https://code-server.dev/install.sh | sh && code-server --bind-addr 0.0.0.0:8080",
+  "postCreateCommand": "echo 'Welcome To Ubuntu 26.04' && uname -a",
   "remoteUser": "mysticgiggle"
 }
